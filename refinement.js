@@ -13,7 +13,24 @@
   document.querySelectorAll('.section-head,.catalog-controls,.carry-panel,.editorial-media,.editorial-copy,.newsletter>div').forEach((el,i)=>{el.classList.add('reveal');el.style.setProperty('--delay',`${i%2*80}ms`);observer.observe(el);});
   document.documentElement.classList.add('motion-ready');
  }
- window.enhanceProducts=()=>{document.querySelectorAll('.product-card').forEach((el,i)=>{el.style.setProperty('--delay',`${Math.min(i,3)*55}ms`);el.classList.add('newly-rendered');});};
+ // Reveal each catalogue photograph once, including photos inserted by filters.
+ const grid = document.querySelector('#product-grid');
+ if ('IntersectionObserver' in window) {
+   const photoObserver = new IntersectionObserver(entries => {
+     entries.forEach(entry => {
+       if (!entry.isIntersecting) return;
+       photoObserver.unobserve(entry.target);
+       if (!reduced.matches) entry.target.classList.add('photo-in-view');
+     });
+   }, {threshold: 0.12});
+   function observePhotos() {
+     photoObserver.disconnect();
+     grid.querySelectorAll('.product-photo:not(.photo-in-view)').forEach(photo => photoObserver.observe(photo));
+   }
+   new MutationObserver(observePhotos).observe(grid, {childList:true});
+   observePhotos();
+ }
+
  document.addEventListener('click',e=>{const b=e.target.closest('[data-add]');if(b){b.classList.add('added');setTimeout(()=>b.classList.remove('added'),500);}});
  // One large image with a genuine zoom view, rather than invented product angles.
  const zoom=document.createElement('dialog');zoom.className='zoom-dialog';zoom.setAttribute('aria-label','Product image zoom');zoom.innerHTML='<button class="close-button" aria-label="Close image zoom">×</button><img alt="">';document.body.appendChild(zoom);zoom.querySelector('button').onclick=()=>zoom.close();

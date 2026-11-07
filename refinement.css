@@ -30,3 +30,34 @@ body{background:#fcfcfa}h1,h2,h3,.wordmark{font-family:var(--font-display)}h1,h2
  .detail-image { height:auto; }
  .detail-image > img { flex:none; height:min(48svh,440px); }
 }
+
+/* Keep the caption and controls stationary while the photograph settles. */
+@media (prefers-reduced-motion: no-preference) {
+  .photo-in-view > a {
+    animation: product-photo-settle 520ms cubic-bezier(.22,.75,.3,1) both;
+  }
+  @keyframes product-photo-settle {
+    from { opacity: .86; transform: scale(1.024); }
+    to { opacity: 1; transform: scale(1); }
+  }
+}
+.outgoing-tote-photo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: #eeede9 center / contain no-repeat;
+  animation: tote-photo-dissolve 220ms ease-in-out forwards;
+}
+@keyframes tote-photo-dissolve { to { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .outgoing-tote-photo { display: none; }
+}
+.catalog-tones { display:flex; align-items:center; margin:4px 0 0 -5px; }
+.catalog-tones button { display:grid; place-items:center; width:32px; height:32px; padding:0; border:0; background:none; cursor:pointer; }
+.catalog-tones button::before { content:''; width:15px;height:15px; border-radius:100%; background:var(--chip); border:1px solid #0002; }
+.catalog-tones button[aria-pressed=true]::before { outline:1px solid var(--ink);outline-offset:3px; }
+.product-photo > a { position:relative; }
+.catalog-outgoing { position:absolute;inset:0;pointer-events:none; animation:tote-photo-dissolve 220ms ease-in-out forwards; }
+@media (prefers-reduced-motion:reduce){.catalog-outgoing{display:none;}}
