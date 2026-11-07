@@ -1,0 +1,113 @@
+[
+  {
+    "id": 8505241,
+    "sourcePageUrl": "https://www.pexels.com/photo/a-fashionable-man-in-streetwear-walking-on-the-street-8505241/",
+    "creator": "SALOMON BYUMA",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "checkedAt": "2026-11-06",
+    "downloadedFile": "assets/hero.jpg",
+    "alt": "Man walking in urban streetwear",
+    "placement": "editorial",
+    "exactProductMatch": false,
+    "status": "reviewed",
+    "notes": "Editorial stock; no endorsement implied."
+  },
+  {
+    "id": 18361239,
+    "sourcePageUrl": "https://www.pexels.com/photo/woman-in-jacket-and-with-bag-18361239/",
+    "creator": "Daniel Olivier",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "checkedAt": "2026-11-06",
+    "downloadedFile": "assets/carry-model.jpg",
+    "alt": "Woman wearing a jacket and carrying a bag",
+    "placement": "editorial",
+    "exactProductMatch": false,
+    "status": "reviewed",
+    "notes": "Editorial stock; no endorsement implied."
+  },
+  {
+    "file": "cloud-black.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "AI-assisted studio recreation"
+  },
+  {
+    "file": "cloud-yellow.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "AI-assisted studio recreation"
+  },
+  {
+    "file": "cloud.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "AI-assisted studio recreation"
+  },
+  {
+    "file": "shift-back-flat.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "Original product photograph, framed for catalogue"
+  },
+  {
+    "file": "shift-back.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "Original product photograph, framed for catalogue"
+  },
+  {
+    "file": "shift-collar.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "Original product photograph, framed for catalogue"
+  },
+  {
+    "file": "shift-flat.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "Original product photograph, framed for catalogue"
+  },
+  {
+    "file": "shift-original.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "Original product photograph, framed for catalogue"
+  },
+  {
+    "file": "shift.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "AI-assisted studio recreation"
+  },
+  {
+    "file": "tote-source-black.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "Original product photograph, framed for catalogue"
+  },
+  {
+    "file": "tote-source-cream.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "Original product photograph, framed for catalogue"
+  },
+  {
+    "file": "tote-source-yellow.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "Original product photograph, framed for catalogue"
+  },
+  {
+    "file": "transit-back.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "Original product photograph, framed for catalogue"
+  },
+  {
+    "file": "transit-bottom.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "Original product photograph, framed for catalogue"
+  },
+  {
+    "file": "transit-front.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "Original product photograph, framed for catalogue"
+  },
+  {
+    "file": "transit-side.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "Original product photograph, framed for catalogue"
+  },
+  {
+    "file": "transit.jpg",
+    "source": "VERMOV supplied product references",
+    "treatment": "AI-assisted studio recreation"
+  }
+]
